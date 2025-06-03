@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Rishi Pal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/20ac24740c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo"><span class="fname">Rishi</span>&nbsp;Pal</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>MERN Stack Developer</p>
+          <h2>Hi, I'm <span class="fname">Rishi</span> Pal<br />From India</h2>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate and detail-oriented web developer with a strong
+              foundation in the MERN stack (MongoDB, Express.js, React.js,
+              Node.js). I recently completed a comprehensive 6-month MERN stack
+              development course at DUCAT, the IT training school, where I
+              gained hands-on experience building dynamic and responsive web
+              applications. I am eager to apply my skills in real-world
+              projects, contribute to collaborative teams, and continue learning
+              in the ever-evolving field of web development.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links">Experience</p> -->
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />
+                  <span>HTML</span><br />
+                  <span>CSS</span><br />
+                  <span>Tailwind css</span><br />
+                  <span>JavaScript</span><br />
+                  <span>React js</span><br />
+                </li>
+                <li>
+                  <span>Backend Development</span><br />
+                  <span>Node js</span><br />
+                  <span>Express js</span><br />
+                  <span>Mongo DB</span><br />
+                </li>
+                <li>
+                  <span>Version control</span><br />
+                  <span>Git</span><br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />
+                  <span
+                    >MERN Stack Developer Training at DUCAT The IT Training
+                    School</span
+                  ><br />
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  <span
+                    >Php Full Stack Developer Training at Tech Mahindra Smart
+                    Academy</span
+                  ><br />
+                </li>
+                <li>
+                  <span>2017</span><br />
+                  <span>BCA from CCS University</span><br />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------ services ------------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              Responsive Web Design <br />
+              UI/UX Implementation <br />
+              API Integration <br />
+              Version Control (Git & GitHub) <br />
+              Performance Optimization <br />
+              Deployment <br />
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React.js Development</h2>
+            <p>
+              Component-Based UI Development <br />
+              Single Page Application (SPA) Creation <br />
+              State Management with Hooks & Context API <br />
+              REST API Integration <br />
+              Responsive Design with React <br />
+              Routing with React Router <br />
+              Performance Optimization <br />
+              Code Reusability & Modular Architecture <br />
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-node-js"></i>
+            <h2>MERN Stack Development</h2>
+            <p>
+              Responsive Web Design <br />
+              Single Page Application (SPA) Development <br />
+              RESTful API Development <br />
+              MongoDB Database Management <br />
+              Full-Stack Integration <br />
+              Authentication & Security <br />
+              Code Versioning with Git & GitHub <br />
+              Deployment & Hosting
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------portfolio--------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/project1.PNG" alt="" />
+            <div class="layer">
+              <h3>Facebook UI Clone with Light/Dark Theme Toggle</h3>
+              <p>
+                This project is a responsive UI clone of Facebook, built using HTML and CSS to replicate the layout and styling of the platform. It includes a JavaScript-powered light/dark mode toggle, allowing users to seamlessly switch between themes. The selected theme is persisted using localStorage, ensuring the user’s preference is retained across sessions for a smooth and personalized experience.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project2.PNG" alt="" />
+            <div class="layer">
+              <h3>E-commerce App with React.js and Firebase Authentication</h3>
+              <p>
+                This is a fully functional e-commerce web application built with React.js for the frontend. It integrates Firebase Authentication to handle user sign-up and login securely. Upon registration, user information is stored in Firebase's real-time database, enabling personalized experiences and secure session management.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the telented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -------------------- contact --------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i>rishikumarxyx@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91 8439914798</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/1EGxGUJfhL/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/rishi8039?igsh=ano4MTcxZ285aTRh" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/rishi-kumar-740224238" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="/images/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Rishi Pal Made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwdl-NNQkN3qxOnoqDDhcWDxbYH5rJNy04NVPK9iD5BbPMxm28GiDa7ihyTQqIrHyxB/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
